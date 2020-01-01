@@ -3,31 +3,67 @@
 import React from 'react'
 
 // Components
-import { Header } from '../components'
+import { Nav } from '../components'
 import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
 
 /** Component - About */
 export default () => {
   // Page Metadata
   const Metadata = (
     <Helmet>
-      <title>Book Sadprasid | About</title>
+      <title>Book Sadprasid | About Me</title>
     </Helmet>
   )
 
   return (
     <>
       {Metadata}
-      <Header>About Page</Header>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-      </ul>
+      <Nav />
+      <header
+        style={{
+          height: '80vh',
+          minHeight: 700,
+          width: 'var(--large)',
+          margin: '0 auto',
+        }}
+      ></header>
+      <main>
+        <section
+          style={{
+            backgroundColor: 'var(--white)',
+            height: '80vh',
+            minHeight: 700,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <h1>What I Do</h1>
+        </section>
+        <section
+          style={{
+            height: '500px',
+            minHeight: 700,
+            margin: '0 auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <h1>Testimonials</h1>
+        </section>
+      </main>
+      <footer
+        style={{
+          backgroundColor: 'var(--white)',
+          height: 400,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <h1>Footer</h1>
+      </footer>
     </>
   )
 }
