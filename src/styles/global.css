@@ -5,11 +5,12 @@
 /** Variables */
 :root {
   /* Colours */
-  --white: #eee;
+  --white: #fff;
   --black: #555;
   --gold: #F09A59;
   --light-gold: #F5C082;
   --background: #E5E5E5;
+  --purple: #E350CB;
 
   /* Breakpoints */
   --large: 1200px;
@@ -28,4 +29,15 @@ html {
 
 body {
   background-color: var(--background);
+}
+
+h1, h2 {
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2 {
+  font-size: 46px;
+  font-weight: 500;
+  margin: 18px 0;
 }
