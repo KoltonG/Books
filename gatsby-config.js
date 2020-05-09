@@ -4,7 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-module.exports = {
-  /* Your site config here */
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-emotion`],
-}
+export const plugins = [`gatsby-plugin-react-helmet`, `gatsby-plugin-emotion`];
