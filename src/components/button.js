@@ -11,7 +11,7 @@ import styled from '@emotion/styled'
  */
 export const Button = ({ children }) => {
   const Button = styled.button`
-    padding: 10px 20px;
+    padding: 8px 16px;
     color: var(--white);
     border-radius: 30px;
     border: none;
