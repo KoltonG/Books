@@ -21,6 +21,7 @@ export const Section = ({
   const Content = styled.div`
     max-width: var(--large);
     margin: 0 auto;
+    /* TODO: Handle max-width variable */
     @media (max-width: 1230px) {
       padding-left: 15px;
       padding-right: 15px;

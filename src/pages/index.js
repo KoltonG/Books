@@ -39,6 +39,7 @@ export default () => {
               height: 800px;
               margin-left: 48px;
             `}
+            alt="hero"
           />
           <div
             css={css`
@@ -277,10 +278,12 @@ export default () => {
       <main>
         <Section paddingTop={140} backgroundColor="var(--white)">
           <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-            }}
+            css={css`
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-column-gap: 120px;
+              padding: 0 75px;
+            `}
           >
             <div>
               <Tag>What I Do</Tag>
@@ -288,6 +291,79 @@ export default () => {
               <p>
                 digital experience, digital products, website, branding, layout
               </p>
+            </div>
+            <div
+              css={css`
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 100px;
+                grid-row-gap: 40px;
+              `}
+            >
+              <div>
+                <img
+                  src="box.png"
+                  alt="box"
+                  css={css`
+                    height: 60px;
+                  `}
+                />
+                <h3>Interface Design</h3>
+                <p>
+                  digital experience, digital products, website, branding,
+                  layout. Book gotta book, book,book. digital experience,
+                  digital products, website, branding, layout. Book gotta book,
+                  book,book
+                </p>
+              </div>
+              <div>
+                <img
+                  src="chat.png"
+                  alt="chat"
+                  css={css`
+                    height: 60px;
+                  `}
+                />
+                <h3>Interface Design</h3>
+                <p>
+                  digital experience, digital products, website, branding,
+                  layout. Book gotta book, book,book. digital experience,
+                  digital products, website, branding, layout. Book gotta book,
+                  book,book
+                </p>
+              </div>
+              <div>
+                <img
+                  src="tag.png"
+                  alt="tag"
+                  css={css`
+                    height: 60px;
+                  `}
+                />
+                <h3>Interface Design</h3>
+                <p>
+                  digital experience, digital products, website, branding,
+                  layout. Book gotta book, book,book. digital experience,
+                  digital products, website, branding, layout. Book gotta book,
+                  book,book
+                </p>
+              </div>
+              <div>
+                <img
+                  src="connection.png"
+                  alt="connection"
+                  css={css`
+                    height: 60px;
+                  `}
+                />
+                <h3>Interface Design</h3>
+                <p>
+                  digital experience, digital products, website, branding,
+                  layout. Book gotta book, book,book. digital experience,
+                  digital products, website, branding, layout. Book gotta book,
+                  book,book
+                </p>
+              </div>
             </div>
           </div>
         </Section>
