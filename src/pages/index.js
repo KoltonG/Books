@@ -3,7 +3,16 @@
 import React from 'react'
 
 // Components
-import { Nav, Header, Section, Footer, Tag, Button } from '../components'
+import {
+  Button,
+  Card,
+  Footer,
+  Header,
+  Heading,
+  Nav,
+  Section,
+  Tag,
+} from '../components'
 import { Helmet } from 'react-helmet'
 
 // Styles
@@ -82,10 +91,10 @@ export default () => {
                     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 
                     > div {
-                      div:nth-child(1) p {
+                      div:nth-of-type(1) p {
                         color: var(--light-gold);
                       }
-                      div:nth-child(2) p {
+                      div:nth-of-type(2) p {
                         color: var(--black);
                       }
 
@@ -122,14 +131,14 @@ export default () => {
                       transition: fill 0.2s;
                     }
 
-                    div:nth-child(1) p {
+                    div:nth-of-type(1) p {
                       margin: 0;
                       font-size: 30px;
                       line-height: 38px;
                       font-weight: bold;
                     }
 
-                    div:nth-child(2) p {
+                    div:nth-of-type(2) p {
                       margin: 0;
                       font-size: 12px;
                       text-align: left;
@@ -406,7 +415,38 @@ export default () => {
         </Section>
         <Section style={{ textAlign: 'center' }}>
           <Tag>Testimonials</Tag>
-          <h2>Human-centred Digital Design & Development</h2>
+          <Heading type="h2" isNarrow>
+            Human-centred Digital Design & Development
+          </Heading>
+          {/* TODO: Can we make this common */}
+          <div
+            css={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              padding: '0 75px',
+              gridColumnGap: 48,
+              marginTop: 64,
+            }}
+          >
+            <Card
+              src="testimonial_1.png"
+              name="Norra Cottrill"
+              content="digital experience, digital products, website, branding, layout. Book gotta book, book,book."
+              company="Alongside"
+            />
+            <Card
+              src="testimonial_1.png"
+              name="Norra Cottrill"
+              content="digital experience, digital products, website, branding, layout. Book gotta book, book,book."
+              company="Alongside"
+            />
+            <Card
+              src="testimonial_1.png"
+              name="Norra Cottrill"
+              content="digital experience, digital products, website, branding, layout. Book gotta book, book,book."
+              company="Alongside"
+            />
+          </div>
         </Section>
       </main>
       <Footer
@@ -421,7 +461,9 @@ export default () => {
         }}
       >
         <Tag>Hire Me</Tag>
-        <h2>Let me join your next project.</h2>
+        <Heading type="h2" isNarrow>
+          Let me join your next project.
+        </Heading>
         <Button>Contact Me</Button>
       </Footer>
     </>

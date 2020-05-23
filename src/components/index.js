@@ -5,5 +5,7 @@ export * from './section'
 export * from './footer'
 
 /** Common Components */
+export * from './heading'
 export * from './button'
 export * from './tag'
+export * from './Card'
