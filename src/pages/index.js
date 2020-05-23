@@ -301,6 +301,23 @@ export default () => {
               `}
             >
               <div>
+                {/* TODO: Images seem pixelated */}
+                <img
+                  src="tag.png"
+                  alt="tag"
+                  css={css`
+                    height: 60px;
+                  `}
+                />
+                <h4>Interface Design</h4>
+                <p>
+                  digital experience, digital products, website, branding,
+                  layout. Book gotta book, book,book. digital experience,
+                  digital products, website, branding, layout. Book gotta book,
+                  book,book
+                </p>
+              </div>
+              <div>
                 <img
                   src="box.png"
                   alt="box"
@@ -308,7 +325,7 @@ export default () => {
                     height: 60px;
                   `}
                 />
-                <h3>Interface Design</h3>
+                <h4>Interface Design</h4>
                 <p>
                   digital experience, digital products, website, branding,
                   layout. Book gotta book, book,book. digital experience,
@@ -324,23 +341,7 @@ export default () => {
                     height: 60px;
                   `}
                 />
-                <h3>Interface Design</h3>
-                <p>
-                  digital experience, digital products, website, branding,
-                  layout. Book gotta book, book,book. digital experience,
-                  digital products, website, branding, layout. Book gotta book,
-                  book,book
-                </p>
-              </div>
-              <div>
-                <img
-                  src="tag.png"
-                  alt="tag"
-                  css={css`
-                    height: 60px;
-                  `}
-                />
-                <h3>Interface Design</h3>
+                <h4>Interface Design</h4>
                 <p>
                   digital experience, digital products, website, branding,
                   layout. Book gotta book, book,book. digital experience,
@@ -356,13 +357,49 @@ export default () => {
                     height: 60px;
                   `}
                 />
-                <h3>Interface Design</h3>
+                <h4>Interface Design</h4>
                 <p>
                   digital experience, digital products, website, branding,
                   layout. Book gotta book, book,book. digital experience,
                   digital products, website, branding, layout. Book gotta book,
                   book,book
                 </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 css={{ marginLeft: 75 }}>Work With:</h3>
+            <div
+              css={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(5, 1fr)',
+                gridColumnGap: 16,
+                div: {
+                  display: 'flex',
+                  alignItems: 'center',
+                },
+                img: {
+                  width: '100%',
+                },
+              }}
+            >
+              <div>
+                <img src="ignite_fredericton.png" alt="Ignite Fredericton" />
+              </div>
+              <div>
+                <img src="planet_hatch.png" alt="Planet Hatch" />
+              </div>
+              <div>
+                <img
+                  src="immigration_fredericton.png"
+                  alt="Immigration Fredericton"
+                />
+              </div>
+              <div>
+                <img src="knowledge_park.png" alt="Knowledge Park" />
+              </div>
+              <div>
+                <img src="ignite_fredericton.png" alt="Ignite Fredericton" />
               </div>
             </div>
           </div>
