@@ -3,16 +3,7 @@
 import React from 'react'
 
 // Components
-import {
-  Button,
-  Card,
-  Footer,
-  Header,
-  Heading,
-  Nav,
-  Section,
-  Tag,
-} from '../components'
+import { Card, Footer, Header, Heading, Nav, Section, Tag } from '../components'
 import { Helmet } from 'react-helmet'
 
 // Styles

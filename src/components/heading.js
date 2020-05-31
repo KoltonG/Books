@@ -5,13 +5,7 @@ import React from 'react'
  * Component - Heading
  * Generic heading element that will handle narrowing the content and centering
  */
-export const Heading = ({
-  mt = 0,
-  mb = 0,
-  type: Tag = 'h1',
-  isNarrow,
-  children,
-}) => (
+export const Heading = ({ mt, mb, type: Tag = 'h1', isNarrow, children }) => (
   <div
     css={{
       marginTop: mt && mt * 8,
