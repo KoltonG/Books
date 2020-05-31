@@ -31,6 +31,10 @@ export const Card = ({ src, name, content, company }) => (
         border: none;
         margin-bottom: 40px;
       }
+
+      small {
+        color: var(--text-grey);
+      }
     `}
   >
     <img src={src} alt={name} height="140" />

@@ -6,17 +6,20 @@ import styled from '@emotion/styled'
 
 /** Component - Header */
 export const Section = ({
-  paddingTop = 65,
-  paddingBottom = 65,
-  backgroundColor,
+  isShort,
+  pt = 65,
+  pb = !isShort && 65,
+  mb = isShort && -80,
+  bc,
   children,
   ...props
 }) => {
-  const Section = styled.section`
-    padding-top: ${paddingTop}px;
-    padding-bottom: ${paddingBottom}px;
-    background-color: ${backgroundColor};
-  `
+  const Section = styled.section({
+    backgroundColor: bc,
+    marginBottom: mb,
+    paddingBottom: pb,
+    paddingTop: pt,
+  })
 
   const Content = styled.div`
     max-width: var(--large);

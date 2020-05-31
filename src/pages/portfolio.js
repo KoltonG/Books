@@ -3,7 +3,7 @@
 import React from 'react'
 
 // Components
-import { Nav } from '../components'
+import { Nav, Footer } from '../components'
 import { Helmet } from 'react-helmet'
 
 /** Component - Portfolio */
@@ -53,17 +53,7 @@ export default () => {
           <h1>Testimonials</h1>
         </section>
       </main>
-      <footer
-        style={{
-          backgroundColor: 'var(--white)',
-          height: 400,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <h1>Footer</h1>
-      </footer>
+      <Footer bc="var(--white)" pt={29} pb={16} />
     </>
   )
 }

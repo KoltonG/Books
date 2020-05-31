@@ -285,13 +285,14 @@ export default () => {
         </center>
       </Header>
       <main>
-        <Section paddingTop={140} backgroundColor="var(--white)">
+        <Section pt={140} bc="var(--white)">
           <div
             css={css`
               display: grid;
               grid-template-columns: repeat(2, 1fr);
               grid-column-gap: 120px;
               padding: 0 75px;
+              margin-bottom: 72px;
             `}
           >
             <div>
@@ -413,12 +414,11 @@ export default () => {
             </div>
           </div>
         </Section>
-        <Section style={{ textAlign: 'center' }}>
+        <Section style={{ textAlign: 'center' }} isShort>
           <Tag>Testimonials</Tag>
           <Heading type="h2" isNarrow>
             Human-centred Digital Design & Development
           </Heading>
-          {/* TODO: Can we make this common */}
           <div
             css={{
               display: 'grid',
@@ -435,13 +435,13 @@ export default () => {
               company="Alongside"
             />
             <Card
-              src="testimonial_1.png"
+              src="testimonial_2.png"
               name="Norra Cottrill"
               content="digital experience, digital products, website, branding, layout. Book gotta book, book,book."
               company="Alongside"
             />
             <Card
-              src="testimonial_1.png"
+              src="testimonial_3.png"
               name="Norra Cottrill"
               content="digital experience, digital products, website, branding, layout. Book gotta book, book,book."
               company="Alongside"
@@ -449,23 +449,7 @@ export default () => {
           </div>
         </Section>
       </main>
-      <Footer
-        backgroundColor="var(--white)"
-        paddingTop={230}
-        paddingBottom={130}
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-        }}
-      >
-        <Tag>Hire Me</Tag>
-        <Heading type="h2" isNarrow>
-          Let me join your next project.
-        </Heading>
-        <Button>Contact Me</Button>
-      </Footer>
+      <Footer bc="var(--white)" pt={29} pb={16} />
     </>
   )
 }

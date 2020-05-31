@@ -5,13 +5,15 @@
 /** Variables */
 :root {
   /* Colours */
-  --white: #fff;
+  --background: #f7f6f1;
   --black: #555;
   --gold: #f09a59;
   --light-gold: #f5c082;
-  --background: #f7f6f1;
   --purple: #e350cb;
   --text-disable: #e5e5e5;
+  --text-disable: #e5e5e5;
+  --text-grey: #979797;
+  --white: #fff;
 
   /* Breakpoints */
   --large: 1200px;
