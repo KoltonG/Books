@@ -54,7 +54,7 @@ export const Footer = ({ pt = 8, pb = 8, bc, children, ...props }) => {
         }}
       >
         <div css={{ width: 120 }}>
-          <img src="logo-bw.png" alt="logo" height="24" />
+          <img alt="logo" height="24" loading="lazy" src="logo-bw.png" />
         </div>
         <div
           css={{
@@ -68,28 +68,33 @@ export const Footer = ({ pt = 8, pb = 8, bc, children, ...props }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="fb.png" alt="facebook" height="24" />
+            <img alt="facebook" height="24" loading="lazy" src="fb.png" />
           </a>
           <a
             href="https://www.instagram.com/notebookpeace"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="instagram.png" alt="instagram" height="24" />
+            <img
+              alt="instagram"
+              height="24"
+              loading="lazy"
+              src="instagram.png"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/bookkaraalexa/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="linkedin.png" alt="linkedin" height="24" />
+            <img alt="linkedin" height="24" loading="lazy" src="linkedin.png" />
           </a>
           <a
             href="https://twitter.com/BookSadprasid"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="twitter.png" alt="twitter" height="24" />
+            <img alt="twitter" height="24" loading="lazy" src="twitter.png" />
           </a>
         </div>
         <Button isBW>Hire Me</Button>

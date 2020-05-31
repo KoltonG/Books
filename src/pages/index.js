@@ -304,8 +304,9 @@ export default () => {
               <div>
                 {/* TODO: Images seem pixelated */}
                 <img
-                  src="tag.png"
                   alt="tag"
+                  loading="lazy"
+                  src="tag.png"
                   css={css`
                     height: 60px;
                   `}
@@ -320,8 +321,9 @@ export default () => {
               </div>
               <div>
                 <img
-                  src="box.png"
                   alt="box"
+                  src="box.png"
+                  loading="lazy"
                   css={css`
                     height: 60px;
                   `}
@@ -336,8 +338,9 @@ export default () => {
               </div>
               <div>
                 <img
-                  src="chat.png"
                   alt="chat"
+                  loading="lazy"
+                  src="chat.png"
                   css={css`
                     height: 60px;
                   `}
@@ -352,8 +355,9 @@ export default () => {
               </div>
               <div>
                 <img
-                  src="connection.png"
                   alt="connection"
+                  loading="lazy"
+                  src="connection.png"
                   css={css`
                     height: 60px;
                   `}
@@ -385,22 +389,35 @@ export default () => {
               }}
             >
               <div>
-                <img src="ignite_fredericton.png" alt="Ignite Fredericton" />
-              </div>
-              <div>
-                <img src="planet_hatch.png" alt="Planet Hatch" />
-              </div>
-              <div>
                 <img
-                  src="immigration_fredericton.png"
-                  alt="Immigration Fredericton"
+                  alt="Ignite Fredericton"
+                  loading="lazy"
+                  src="ignite_fredericton.png"
                 />
               </div>
               <div>
-                <img src="knowledge_park.png" alt="Knowledge Park" />
+                <img alt="Planet Hatch" loading="lazy" src="planet_hatch.png" />
               </div>
               <div>
-                <img src="ignite_fredericton.png" alt="Ignite Fredericton" />
+                <img
+                  alt="Immigration Fredericton"
+                  loading="lazy"
+                  src="immigration_fredericton.png"
+                />
+              </div>
+              <div>
+                <img
+                  alt="Knowledge Park"
+                  loading="lazy"
+                  src="knowledge_park.png"
+                />
+              </div>
+              <div>
+                <img
+                  alt="Ignite Fredericton"
+                  loading="lazy"
+                  src="ignite_fredericton.png"
+                />
               </div>
             </div>
           </div>

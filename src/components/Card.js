@@ -37,7 +37,7 @@ export const Card = ({ src, name, content, company }) => (
       }
     `}
   >
-    <img src={src} alt={name} height="140" />
+    <img alt={name} height="140" loading="lazy" src={src} />
     <Tag>Testimonial</Tag>
     <p>{content}</p>
     <hr />
