@@ -4,7 +4,7 @@ import React from 'react'
 
 // Components
 import { Link } from 'gatsby'
-import { Button } from './button'
+import { Button } from './'
 
 // Styles
 import { css } from '@emotion/core'

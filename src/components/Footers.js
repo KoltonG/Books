@@ -5,7 +5,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 // Components
-import { Button, Tag, Heading } from './index'
+import { Button, Tag, Heading } from './'
 
 /** Component - Header */
 export const Footer = ({ pt = 8, pb = 8, bc, children, ...props }) => {

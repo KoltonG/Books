@@ -1,11 +1,11 @@
 /* Layout */
-export * from './nav'
-export * from './header'
-export * from './section'
-export * from './Footer'
+export * from './Nav'
+export * from './Header'
+export * from './Section'
+export * from './Footers'
 
 /** Common Components */
-export * from './heading'
-export * from './Button'
-export * from './tag'
-export * from './Card'
+export * from './Heading'
+export * from './Buttons'
+export * from './Tag'
+export * from './Cards'

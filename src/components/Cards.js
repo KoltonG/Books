@@ -3,7 +3,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 
 // Components
-import { Tag } from './tag'
+import { Tag } from './'
 
 /** Component - Card */
 export const Card = ({ src, name, content, company }) => (
